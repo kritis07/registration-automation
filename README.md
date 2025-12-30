@@ -1,62 +1,64 @@
-# Intelligent Registration System – Automation Project
+# Intelligent Registration System – Automation Assignment
 
 ## Objective
-Develop a modern registration system with smart validations and automate testing using Selenium and TestNG.
+Develop a modern registration system with client-side validations and automate testing using Selenium.
 
 ---
 
-## Features Implemented
-
-### Web Application
-- Responsive registration form
-- Mandatory field validation
-- Inline error messages and error summary
-- Password strength indicator (Weak / Medium / Strong)
-- Dynamic Country → State → City dropdowns
-- Submit button disabled until form is valid
-- Success message and form reset on successful submission
-
----
-
-## Automation Framework
-- Selenium WebDriver
+## Tech Stack
+- HTML, CSS, JavaScript
+- Selenium WebDriver (Java)
 - TestNG
-- Java
-- Page Object Model (POM)
-- WebDriverManager
+- Maven
+- ChromeDriver
+- OBS (screen recording)
 
 ---
 
-## Automated Test Scenarios
+## Part 1: Web Application
+The registration form includes:
+- Mandatory fields validation
+- Inline error messages
+- Error summary at top
+- Password strength indicator
+- Dynamic Country → State → City dropdowns
+- Terms & Conditions validation
+- Success message with form reset
 
-### Flow A – Negative Scenario
-- Last Name skipped
-- Validation error displayed
-- Error field highlighted
-- Screenshot captured: `error-state.png`
+---
 
-### Flow B – Positive Scenario
-- All valid inputs provided
+## Part 2: Automation Testing
+
+### Automation Flow A – Negative Scenario
+- Missing Last Name
+- Error message validated
+- Screenshot captured (`error-state.png`)
+
+### Automation Flow B – Positive Scenario
+- All valid inputs
 - Successful submission
-- Success message displayed
-- Screenshot captured: `success-state.png`
+- Screenshot captured (`success-state.png`)
 
-### Flow C – Form Logic Validation
-- Country → State → City dependency validated
-- Password strength indicator verified
+### Automation Flow C – Form Logic Validation
+- Country → State update
+- State → City update
+- Password strength check
 - Confirm password mismatch validation
-- Screenshot captured: `flowC-validation.png`
+- Submit button validation
+- Screenshot captured (`flowC-validation.png`)
 
 ---
 
-## How to Run
-1. Open the project in IntelliJ IDEA
-2. Start the HTML page using Live Server or local server
-3. Run `SmokeTest.java` using TestNG
-4. Screenshots are stored in `/screenshots`
+## How to Run Automation
+1. Start local server for web page
+2. Open automation project in IntelliJ
+3. Run `SmokeTest.java`
+4. Screenshots auto-generated
 
 ---
 
-## Author
-Kriti Singh Behl
-
+## Deliverables
+- Source code (HTML, CSS, JS)
+- Selenium automation scripts
+- Screenshots
+- Execution video
