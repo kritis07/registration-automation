@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <!-- Error summary (hidden for now) -->
+    <div id="errorSummary" style="display:none; color:red;"></div>
+    <div id="successMessage" style="display:none;">
+    Registration Successful!
+    </div>
+
+
+    <form id="registrationForm">
+
+        <label>First Name *</label><br>
+        <input type="text" id="firstName"><br>
+        <span class="error" id="firstNameError"></span><br>
+
+        <label>Last Name *</label><br>
+        <input type="text" id="lastName"><br>
+        <span class="error" id="lastNameError"></span><br>
+
+        <label>Email *</label><br>
+        <input type="email" id="email"><br>
+        <span class="error" id="emailError"></span><br>
+
+        <label>Phone Number *</label><br>
+        <input type="text" id="phone"><br>
+        <span class="error" id="phoneError"></span><br>
+
+        <label>Gender *</label>
+
+<div class="gender-group">
+    <div class="gender-option">
+        <input type="radio" name="gender" value="Male"> <span>Male</span>
+    </div>
+    <div class="gender-option">
+        <input type="radio" name="gender" value="Female"> <span>Female</span>
+    </div>
+    <div class="gender-option">
+        <input type="radio" name="gender" value="Other"> <span>Other</span>
+    </div>
+</div>
+
+<span class="error" id="genderError"></span><br>
+
+
+
+        <label>Country</label><br>
+        <select id="country">
+    <option value="">Select Country</option>
+    <option value="India">India</option>
+    <option value="USA">USA</option>
+        </select>
+
+       <select id="state" disabled>
+    <option value="">Select State</option>
+       </select>
+
+       <select id="city" disabled>
+    <option value="">Select City</option>
+       </select>
+       <br><br>
+
+
+        <label>Password *</label><br>
+        <input type="password" id="password"><br>
+        <span id="passwordStrength"></span><br>
+        <span class="error" id="passwordError"></span><br>
+        
+
+
+        <label>Confirm Password *</label><br>
+        <input type="password" id="confirmPassword"><br>
+        <span class="error" id="confirmPasswordError"></span><br>
+
+        <input type="checkbox" id="terms"> I agree to Terms & Conditions *<br>
+        <span class="error" id="termsError"></span><br>
+
+        <button type="submit" id="submitBtn">Submit</button>
+
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>

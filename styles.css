@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 250px;
+    padding: 6px;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+button {
+    padding: 8px 16px;
+    margin-top: 10px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+input.error-border, select.error-border {
+    border: 2px solid red;
+}
+
+#successMessage {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.gender-group {
+    display: flex;
+    gap: 16px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.gender-option {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+#passwordStrength {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.weak {
+    color: red;
+}
+
+.medium {
+    color: orange;
+}
+
+.strong {
+    color: green;
+}
+#successMessage {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
